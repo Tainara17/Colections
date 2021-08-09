@@ -10,6 +10,8 @@ fun main () {
     println ("..............................")
     //println ("Maior salário: ${salarios.max()}") -- devia mostrar o valor máximo do array, mas não funciona como deveria
     //println ("Menor salário: ${salarios.min()}") -- devia mostrar o valor mínimo do array, mas não funciona como deveria
+    println ("Maior salário: ${salarios.maxOrNull()}")
+    println ("Menor salário: ${salarios.minOrNull()}")
     println("Média salarial: ${salarios.average()}")
 
     val salariosMaiorQue2500 = salarios.filter { it > 2500.0 }
