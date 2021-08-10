@@ -2,7 +2,7 @@ package one.digitalinnovation.colections
 
 fun main () {
 
-    val joao = Funcionario("João", 2000.0 , "CLT")
+    val joao = Funcionario( "João", 2000.0 , "CLT")
     val pedro = Funcionario("Pedro", 1500.0 , "CLT" )
     val maria = Funcionario("Maria", 4000.0 , "CNPJ")
 
@@ -27,16 +27,4 @@ fun main () {
         .groupBy { it.tipoContrato }
         .forEach { println(it) }
 
-}
-data class  Funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContrato: String,
-) {
-    override fun toString() : String =
-    """"
-        Nome: $nome
-        Salário: $salario
-
-    """.trimIndent ()
 }
